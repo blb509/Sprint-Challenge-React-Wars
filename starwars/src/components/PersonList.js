@@ -4,7 +4,7 @@ import './StarWars.css';
 
 const PersonList = props => {
     let newList = [...props.list]
-    return newList.map(list => <Person list={list}/>)
+    return  <div className='personList'>{newList.map(list => <Person list={list}/>)}</div>
 }
 
 export default PersonList
